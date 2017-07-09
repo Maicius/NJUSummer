@@ -1,0 +1,13 @@
+1
+3
+1 2 3
+Add 3 1
+Add 2 4
+Query 1 3
+End
+
+ for(int m=0; m < coinType; ++m){
+                for(int n=w[m];n <= piggyWeight; ++n){
+                    dp[n] = max(dp[n], dp[n-w[m]] + p[m]);
+                }
+            }
